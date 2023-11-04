@@ -1,24 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./styles/global.scss";
+import { ContactForm } from "./components/ContactForm";
+import contact_image from "./img/contact.svg";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-wrapper">
+      <div className="logo">
+        <img src={contact_image} alt="contact us"></img>
+      </div>
+      <div>
+        <ContactForm />
+      </div>
     </div>
   );
 }
