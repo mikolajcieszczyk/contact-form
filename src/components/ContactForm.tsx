@@ -31,7 +31,7 @@ const validationSchema = Yup.object().shape({
 
 export const ContactForm: React.FC = () => {
   const handleSubmit = (values: FormData, { resetForm }: any) => {
-    alert(values);
+    alert(JSON.stringify(values));
     resetForm();
   };
 
